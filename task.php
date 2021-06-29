@@ -1,12 +1,15 @@
 <?php
 
-$x = 1;
+function numeric($num) {
+    
+    for ($num=0; $num <= 10; $num++) { 
+        echo $num . "<br>" ;
+    }
 
-while ($x <= 15) {
-    echo $x . "<br>" ;
-    $x++ ;
-} 
+}
 
+    echo numeric(1) ;
+    
 //////question 2 solution
  
 echo "//////////////////" . "<br>";
@@ -21,3 +24,11 @@ echo sum(3453,56);
 echo sum(43,656);
 
 ?>
+
+
+$x = 1
+
+while ($x <= 15) {
+    echo $x . "<br>" ;
+    $x++ ;
+} 
