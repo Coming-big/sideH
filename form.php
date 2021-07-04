@@ -2,8 +2,12 @@
 
 if (isset($_POST['submitEmail'])) {
     $email = $_POST['email'];
+    $name = $_POST['name'];
+    $password = $_POST['password'];
 
-    echo "<h2>WELCOME ". $email ."</h2>"";
+    echo "<h2>WELCOME ". $name ."</h2>";
+    echo "<h4>Email ". $email ."</h4>";
+    echo "<h4>Password ". $password ."</h4>";
 }
 
 ?>
@@ -12,7 +16,9 @@ if (isset($_POST['submitEmail'])) {
 
 <html>
     <form action="form.php" method="POST">
-        <input name="email" placeholder="Enter your email">
+        <input name="email" type="email" required placeholder="Enter your email"></br>
+        <input name="name" type="text" required placeholder="Enter your name"></br>
+        <input type="password" required placeholder="Enter your password" name="password"></br>
         <button type="submit" name="submitEmail">Submit</button>
     </form>
-<html
+</html>

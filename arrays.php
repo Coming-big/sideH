@@ -55,5 +55,15 @@ for ($i=0; $i < 3 ; $i++) {
     
 }
 
+$array1 = [ 1 , 9 , 5 , 3 , 8 , 10 , 67 , 57 ];
+    echo $array1[6];
+    echo "<br>";
+
+sort: sort($array1);
+print_r($array1);
+        echo "<br>";
+reverse: rsort($array1);
+    print_r($array1);
+
 
 ?>
